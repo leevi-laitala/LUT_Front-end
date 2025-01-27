@@ -220,6 +220,28 @@ img {
     font-weight: bold;
 }
 
+/* Reviews */
+.reviews {
+    padding: 40px 0;
+}
+
+.reviews .reviews-heading {
+    width: 700px;
+    margin-bottom: 40px;
+}
+
+.reviews .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+}
+
+.reviews .card p:nth-child(2) {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+
 /* Card */
 .card {
     background: #fff;
@@ -259,6 +281,41 @@ img {
 }
 
 .pricing .pricing-footer {
+    margin: 30px 0;
+}
+
+
+/* Destinations */
+.destination .destination-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.destination .destination-card-subheading {
+    margin-bottom: 30px;
+}
+
+.destination .destination-card-price {
+    margin-bottom: 30px;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.destination ul {
+    margin: 30px 0;
+}
+
+.destination ul li {
+    margin-bottom: 20px;
+}
+
+.destination ul li i {
+    margin-right: 10px;
+}
+
+.destination .destination-footer {
     margin: 30px 0;
 }
 
@@ -485,4 +542,17 @@ img {
     .text-xxl {
         font-size: 2rem;
     }
+}
+
+/* Stars */
+.star {
+    height: 3px !important;
+    width: 3px !important;
+    position: relative;
+    top: 100%;
+    left: 0%;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    display: inline-block;
+    opacity: 0;
 }

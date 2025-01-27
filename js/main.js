@@ -43,3 +43,20 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileMenu.classList.toggle('active')
     });
 });
+
+// https://www.youtube.com/watch?v=qE8mG_pMOl4
+let sp = document.querySelectorAll("span.star");
+setInterval(() => {
+    let no = Math.floor(Math.random() * sp.length);
+    let h = Math.floor(Math.random() * 100);
+    let w = Math.floor(Math.random() * 100);
+    sp[no].style.top = `${h}%`;
+    sp[no].style.left = `${w}%`;
+    sp[no].style.opacity = "1";
+
+    setTimeout(() => {
+        sp[no].style.opacity = "0";
+        sp[no].style.top = `${h}%`;
+        sp[no].style.left = `${w}%`;
+    }, 2000);
+}, 500);
